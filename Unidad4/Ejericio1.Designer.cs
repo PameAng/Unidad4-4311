@@ -176,15 +176,16 @@
             this.btnAgregar.TabIndex = 15;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 288);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 285);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(892, 207);
             this.dataGridView1.TabIndex = 16;
             // 
             // lbgenero
@@ -272,7 +273,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(948, 504);
             this.Controls.Add(this.lbnacimiento);
             this.Controls.Add(this.lbcedula);
             this.Controls.Add(this.lbocupacion);
@@ -301,6 +302,7 @@
             this.Controls.Add(this.tbapellido);
             this.Name = "Ejericio1";
             this.Text = "Ejericio1";
+            this.Load += new System.EventHandler(this.Ejericio1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
