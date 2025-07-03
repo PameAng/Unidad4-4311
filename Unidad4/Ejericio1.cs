@@ -20,9 +20,9 @@ namespace Unidad4
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Add(
-                tbapellido.Text, tbcedula.Text, tbcorreo.Text, tbdirrecion.Text, tbedad.Text,
-                tbestado.Text, tbgenero.Text, tbnacimiento.Text, tbnacionalidad.Text, tbnombre.Text,
-                tbocupacion.Text, tbtelefono.Text
+                tbnombre.Text, tbapellido.Text, tbedad.Text, tbgenero.Text, tbdirrecion.Text, tbtelefono.Text, tbcorreo.Text,
+                tbnacionalidad.Text, tbestado.Text, tbocupacion.Text, tbcedula.Text, tbnacimiento.Text
+
                 );
 
             foreach (Control ctrl in this.Controls)
@@ -35,10 +35,23 @@ namespace Unidad4
         private void Ejericio1_Load(object sender, EventArgs e)
         {
             dataGridView1.ColumnCount = 12;
-            for (int i = 0; i < 12; i++)
-            {
-                dataGridView1.Columns[i].Name = $"campo{i + 1}";
-            }
+            dataGridView1.Columns[0].Name = "Nombres";
+            dataGridView1.Columns[1].Name = "Apellidos";
+            dataGridView1.Columns[2].Name = "Edad";
+            dataGridView1.Columns[3].Name = "Género";
+            dataGridView1.Columns[4].Name = "Dirección";
+            dataGridView1.Columns[5].Name = "Teléfono";
+            dataGridView1.Columns[6].Name = "Correo";
+            dataGridView1.Columns[7].Name = "Nacionalidad";
+            dataGridView1.Columns[8].Name = "Estado Civil";
+            dataGridView1.Columns[9].Name = "Ocupación";
+            dataGridView1.Columns[10].Name = "Cédula";
+            dataGridView1.Columns[11].Name = "Fecha de Nacimiento";
+        }
+
+        private void tbnombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

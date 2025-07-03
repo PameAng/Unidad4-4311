@@ -57,13 +57,18 @@ namespace Unidad4
                 decimal enUSD = monto / tasasCambio[de];
                 decimal convertido = enUSD * tasasCambio[a];
 
-                label1.Text = $"resultado:{convertido:F2}{a}";
+                label1.Text = $"{convertido:F2}{a}";
             }
             catch
             {
                 MessageBox.Show("Por favor ingresa un monto.");
 
             }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
